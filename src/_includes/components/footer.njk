@@ -1,0 +1,31 @@
+{%- from "system/component.njk" import component -%}
+<footer class="u-bg-primary u-text-white u-py-6">
+    <div class="md:u-flex-row u-container u-flex u-flex-col">
+        <div class="u-flex u-flex-col md:u-w-1/2">
+            <p class="u-py-1 u-border-b">Francesca Ranga</p>
+            {{ component('link', {
+                text: '07368479874',
+                url: 'tel:07368479874',
+                classes: 'u-py-1 u-border-b'
+            }) }}
+
+            {{ component('link', {
+                text: 'info@handstogetherhealthcare.co.uk',
+                url: 'mailto:info@handstogetherhealthcare.co.uk',
+                classes: 'u-py-1 u-border-b'
+            }) }}
+        </div>
+        {% set navPages = collections.all | eleventyNavigation %}
+        <ul class="u-flex u-flex-col md:u-w-1/2">
+            {% for page in navPages %}
+                <li class="u-py-1 u-border-b">
+                    {{ component('link', {
+                        text: page.title,
+                        url: page.url,
+                        classes: ''
+                    }) }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</footer>

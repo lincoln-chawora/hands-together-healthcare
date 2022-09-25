@@ -1,13 +1,15 @@
-<ul>
+<div class="md:u-flex u-space-y-10 md:u-space-y-0 md:u-gap-10">
   {% for post in postslist %}
-    <li>
-      <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </strong>
-      -
-      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      -
-      <span>{{ post.data.description }}</span>
-    </li>
+      <div class="u-w-full md:u-w-1/2 lg:u-w-1/3">
+          {{ component('card', {
+              heading: post.data.title,
+              url: post.url|url,
+              img_src: post.data.image,
+              img_alt: "Some image",
+              date: post.date|readableDate,
+              summary: post.data.description
+          }) }}
+      </div>
   {% endfor %}
-</ul>
+</div>
+

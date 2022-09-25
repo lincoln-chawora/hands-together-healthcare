@@ -1,3 +1,119 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --theme-primary: #005bd4;
+}
+
+html:not(.has-scrollbar-width-set) .u-breakout {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    margin-right: -50vw;
+    margin-left: -50vw;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.has-box-shadow {
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 18px 0 rgb(0 0 0 / 30%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 50px;
+}
+
+h2:not(.u-text-center)::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    background-color: var(--theme-primary);
+    bottom: -10px;
+    width: 25%;
+}
+
+
+.btn-primary {
+   appearance: none;
+   backface-visibility: hidden;
+   background-color: var(--theme-primary);
+   border-radius: 10px;
+   border-style: none;
+   box-shadow: none;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 15px;
+   font-weight: 500;
+   height: 50px;
+   letter-spacing: normal;
+   line-height: 1.5;
+   outline: none;
+   overflow: hidden;
+   padding: 14px 30px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   transform: translate3d(0, 0, 0);
+   transition: all .3s;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: top;
+   white-space: nowrap;
+}
+
+.btn-primary:hover {
+    background-color: #1366d6;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+}
+
+.btn-primary:hover:after {
+    opacity: .5;
+}
+
+.btn-primary:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+}
+
+.btn-primary:active:after {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .btn-primary {
+        padding: 14px 22px;
+        width: 176px;
+    }
+}
+
+.hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #000000;
+}
+
+.hamburger-lines.is-open .line {
+    background: var(--theme-primary);
+}

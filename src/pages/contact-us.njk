@@ -1,0 +1,28 @@
+---
+title: Contact Us
+layout: layouts/base.njk
+permalink: /contact-us/
+eleventyNavigation:
+  key: Contact Us
+  order: 4
+---
+{%- from "../_includes/system/component.njk" import component -%}
+
+{{ component('hero-header', {
+    heading: title,
+    img_src: "contact.jpg",
+    img_alt: "Woman using macbook holding an iphone"
+}) }}
+
+<ul>
+     {% for item in contact.items %}
+         <li>
+             {{ component('link', {
+                 text: item.name,
+                 url: item.link
+             }) }}
+         </li>
+     {% endfor %}
+</ul>
+
+<p class="u-mt-4">☝️ This page gets its content from <code>src/_data/contact.json</code></p>
