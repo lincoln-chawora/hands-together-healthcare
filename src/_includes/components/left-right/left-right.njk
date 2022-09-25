@@ -1,0 +1,21 @@
+<div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10{% if include.reverse %} md:u-flex-row-reverse{% endif %}">
+    <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
+        <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="/img/{{ include.img_src }}" alt="{{ include.img_alt }}">
+    </div>
+    <div class="md:u-w-1/2 u-space-y-4">
+        {{ component('heading', {
+            heading: include.heading,
+            heading_level: 2
+        }) }}
+
+        <p>{{ include.text }}</p>
+
+        {% if include.link_url %}
+            {{ component('link', {
+                text: include.link_text,
+                url: include.link_url,
+                classes: 'btn-primary'
+            }) }}
+        {% endif %}
+    </div>
+</div>

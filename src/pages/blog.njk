@@ -1,10 +1,21 @@
----
-title: Blog
-layout: layouts/base.njk
-permalink: /blog/
-eleventyNavigation:
-  key: Blog
-  order: 2
----
-{% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}
+{#---#}
+{#title: Blog#}
+{#layout: layouts/base.njk#}
+{#permalink: /blog/#}
+{#eleventyNavigation:#}
+{#  key: Blog#}
+{#  order: 3#}
+{#---#}
+{#<!-- capture the JS content as a Nunjucks variable -->#}
+{#{% set js %}#}
+{#  {% include "src/_includes/components/card/sample.js" %}#}
+{#{% endset %}#}
+{#<!-- feed it through our jsmin filter to minify -->#}
+{#<script>#}
+{#  {{ js | jsmin | safe }}#}
+{#</script>#}
+
+{#{%- from "../_includes/system/component.njk" import component -%}#}
+
+{#{% set postslist = collections.posts %}#}
+{#{% include "components/postslist.njk" %}#}

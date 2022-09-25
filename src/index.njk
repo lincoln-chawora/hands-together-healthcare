@@ -1,15 +1,53 @@
 ---
-title: Home
+title: Hands Together Healthcare
 layout: layouts/base.njk
 ---
+{%- from "system/component.njk" import component -%}
 
-<div class="space-y-8">
+{{ component('hero-header', {
+  heading: title,
+  img_src: "love_heart_hands.jpg",
+  img_alt: "3 women making love hearts with hands"
+}) }}
 
-  <div>
-    <p>This is the project's home page. There is a little styling for demonstration purposes only.</p>
-    <p>The navigation might as well be a sidebar, or a floating menu. This template provides the structure, make it yours ✌️</p>
+<div class="u-space-y-16">
+  {{ component('left-right', {
+    img_src: "hands_together.jpg",
+    img_alt: "Hands holding each other",
+    heading: "About us",
+    text: 'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  }) }}
+
+  {{ component('left-right', {
+    reverse: true,
+    heading: "Our services",
+    text: 'Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+    img_src: "wheel_chair.jpg",
+    img_alt: "Woman pushing older woman in a wheel chair",
+    link_text: "See all",
+    link_url: "/our-services"
+  }) }}
+
+  <div class="u-flex u-flex-col u-items-center u-space-y-6">
+    {{ component('heading', {
+      heading: "Services we provide",
+      heading_level: 2
+    }) }}
+
+    <div class="u-grid u-grid-cols-1 md:u-grid-cols-2 lg:u-grid-cols-4 u-gap-4">
+      {% for service in main_services.items %}
+          {{ component('service-card', {
+            heading: service.name,
+            icon: service.icon,
+            text: service.text
+          }) }}
+      {% endfor %}
+    </div>
+
+    {{ component('link', {
+      text: "See all services",
+      url: '/our-services',
+      classes: 'btn-primary'
+    }) }}
   </div>
-
-
-  <a href="https://github.com/tomreinert/minimal-11ty-tailwind-starter" class="inline-block uppercase rounded bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white text-sm">Download on github</a>
 </div>
