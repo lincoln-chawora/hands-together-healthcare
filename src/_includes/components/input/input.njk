@@ -1,0 +1,23 @@
+{% set classes = 'u-mt-1 u-block u-w-full u-rounded-md u-border-gray-400 u-shadow-sm focus:u-border-indigo-300 focus:u-ring focus:u-ring-indigo-200 focus:u-ring-opacity-50' %}
+
+<label for="{{ include.id }}">
+  {{ include.label }}
+
+  {% if include.is_required %}
+    <span class="u-text-red">*</span>
+  {% endif %}
+
+  {% if include.type == 'textarea' %}
+    <textarea class="{{ classes }}"
+            name="{{ include.name }}"
+            id="{{ include.id }}"
+            {% if include.is_required %} required{% endif %}>
+    </textarea>
+  {% else %}
+    <input class="{{ classes }}"
+           name="{{ include.name }}"
+           type="{{ include.type }}"
+           id="{{ include.id }}"
+            {% if include.is_required %} required{% endif %}/>
+  {% endif %}
+</label>

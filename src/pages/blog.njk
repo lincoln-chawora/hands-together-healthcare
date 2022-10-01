@@ -1,21 +1,13 @@
-{#---#}
-{#title: Blog#}
-{#layout: layouts/base.njk#}
-{#permalink: /blog/#}
-{#eleventyNavigation:#}
-{#  key: Blog#}
-{#  order: 3#}
-{#---#}
-{#<!-- capture the JS content as a Nunjucks variable -->#}
-{#{% set js %}#}
-{#  {% include "src/_includes/components/card/sample.js" %}#}
-{#{% endset %}#}
-{#<!-- feed it through our jsmin filter to minify -->#}
-{#<script>#}
-{#  {{ js | jsmin | safe }}#}
-{#</script>#}
+---
+title: Blog
+layout: layouts/base.njk
+permalink: /blog/
+eleventyNavigation:
+  key: Blog
+  order: 3
+---
 
-{#{%- from "../_includes/system/component.njk" import component -%}#}
+{%- from "../_includes/system/component.njk" import component -%}
 
-{#{% set postslist = collections.posts %}#}
-{#{% include "components/postslist.njk" %}#}
+{% set postslist = collections.posts %}
+{% include "components/postslist.njk" %}

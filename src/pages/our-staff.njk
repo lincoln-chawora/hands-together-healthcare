@@ -9,23 +9,23 @@ eleventyNavigation:
 {%- from "system/component.njk" import component -%}
 
 {{ component('hero-header', {
-    heading: title,
-    img_src: "hands_togetHer_young.jpg",
-    img_alt: "Hands in a huddle"
+  heading: title,
+  img_src: "hands_togetHer_young.jpg",
+  img_alt: "Hands in a huddle"
 }) }}
 
 <div class="u-space-y-12">
-    {{ component('heading', {
-        heading: "Meet our team",
-        heading_level: 2
-    }) }}
+  {{ component('heading', {
+    heading: "Meet our team",
+    heading_level: 2
+  }) }}
 
-    {% for item in staff.items %}
-        {{ component('staff-card', {
-            name: item.name,
-            img_src: item.image_src,
-            img_alt: item.image_alt,
-            bio: item.bio
-        }) }}
-    {% endfor %}
+  {% for item in staff.items %}
+    {{ component('staff-card', {
+      name: item.name,
+      img_src: item.image_src,
+      img_alt: item.image_alt,
+      bio: item.bio
+    }) }}
+  {% endfor %}
 </div>

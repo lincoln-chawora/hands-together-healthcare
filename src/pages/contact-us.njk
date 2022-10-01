@@ -9,20 +9,90 @@ eleventyNavigation:
 {%- from "../_includes/system/component.njk" import component -%}
 
 {{ component('hero-header', {
-    heading: title,
-    img_src: "contact.jpg",
-    img_alt: "Woman using macbook holding an iphone"
+  heading: title,
+  img_src: "contact.jpg",
+  img_alt: "Woman using macbook holding an iphone"
 }) }}
 
-<ul>
-     {% for item in contact.items %}
-         <li>
-             {{ component('link', {
-                 text: item.name,
-                 url: item.link
-             }) }}
-         </li>
-     {% endfor %}
-</ul>
+<div class="u-space-y-16">
+    {{ component('heading', {
+      heading: 'Get in touch',
+      heading_level: 2
+    }) }}
+    <div class="u-grid u-grid-cols-1 md:u-grid-cols-2 u-gap-4 lg:u-gap-8">
+      <div class="u-space-y-4">
 
-<p class="u-mt-4">☝️ This page gets its content from <code>src/_data/contact.json</code></p>
+        <p>If you've got any questions about the services we provide or the clients we serve please contact us on through
+          email, phone or contact form, and we will do about best to get back to you as soon as possible.
+        </p>
+
+        <ul>
+          <li>
+            {{ component('link', {
+              text: site.email,
+              url: 'mailto:' ~ site.email,
+              classes: 'hover:u-underline'
+            }) }}
+          </li>
+          {% if site.phoneNumber %}
+            <li>
+              {{ component('link', {
+                text: site.phoneNumber,
+                url: 'tel:' ~ site.phoneNumber,
+                classes: 'hover:u-underline'
+              }) }}
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div>
+        <form id="contact-form" class="u-flex u-flex-col u-space-y-3"
+          method="POST"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSeshb3MvnBudadnQCgWFPt9I-IJJbvHD5IixpDdpKL1XNayjQ/formResponse">
+
+          {{ component('input', {
+            label: 'Name',
+            name: 'entry.2005620554',
+            type: 'text',
+            id: 'name',
+            is_required: true
+          }) }}
+
+          {{ component('input', {
+            label: 'Email',
+            name: 'entry.1045781291',
+            type: 'text',
+            id: 'email',
+            is_required: true
+          }) }}
+
+          {{ component('input', {
+            label: 'Phone number',
+            name: 'entry.1065046570',
+            type: 'text',
+            id: 'ph-number'
+          }) }}
+
+          {{ component('input', {
+            label: 'Message',
+            name: 'entry.839337160',
+            type: 'textarea',
+            id: 'message',
+            is_required: true
+          }) }}
+
+          <div>
+            <button formtarget="_blank" class="btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+{% set form_js %}
+  {% include "src/scripts/form.js" %}
+{% endset %}
+<script>
+  {{ form_js | jsmin | safe }}
+</script>
