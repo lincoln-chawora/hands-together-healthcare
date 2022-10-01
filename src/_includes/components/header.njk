@@ -29,7 +29,7 @@
         class="nav-items u-mt-3 md:u-mt-0 md:u-flex u-flex-col md:u-flex-row md:u-items-center">
       {% for entry in navPages %}
         <li class="u-inline">
-          <a href="{{ entry.url }}" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+          <a href="./{{ entry.url }}" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
              {{ 'u-border-b-2 u-border-primary' if entry.url in page.url
                   else 'u-text-primary hover:u-text-gray-900' }}">
             {{ entry.title }}
