@@ -34,16 +34,16 @@ layout: layouts/base.njk
 
   <div class="u-flex u-flex-col u-items-center u-space-y-6">
     {{ component('heading', {
-      heading: "Our services and values",
+      heading: "Our values",
       heading_level: 2
     }) }}
 
     <div class="u-grid u-grid-cols-1 md:u-grid-cols-2 lg:u-grid-cols-4 u-gap-4">
-      {% for service in main_services.items %}
+      {% for item in values.items %}
           {{ component('service-card', {
-            heading: service.name,
-            icon: service.icon,
-            text: service.text
+            heading: item.name,
+            icon: item.icon,
+            text: item.text
           }) }}
       {% endfor %}
     </div>
