@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Our Services</title>
+    <title>Contact Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lincoln Chawora">
     <meta name="description" content="">
@@ -44,15 +44,15 @@
         class="nav-items u-mt-3 md:u-mt-0 md:u-flex u-flex-col md:u-flex-row md:u-items-center">
       
         <li class="u-inline">
-          <a href="/our-services/" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
-             u-border-b-2 u-border-primary">
+          <a href=".//our-services" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+             u-text-primary hover:u-text-gray-900">
             Our Services
           </a>
         </li>
       
         <li class="u-inline">
-          <a href="/contact-us/" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
-             u-text-primary hover:u-text-gray-900">
+          <a href=".//contact-us" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+             u-border-b-2 u-border-primary">
             Contact Us
           </a>
         </li>
@@ -63,7 +63,7 @@
 </header>
     <main class="u-container u-mb-10">
       <div class="hero-image u-bg-primary u-bg-center u-bg-no-repeat u-bg-cover u-relative u-h-75vh u-breakout u-mb-10"
-     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/wheel_chair.jpg');">
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/contact.jpg');">
   <div class="u-container u-h-full">
     <div class="hero-text u-flex u-flex-col u-h-full u-justify-center u-text-center u-text-white">
       
@@ -74,25 +74,15 @@
   
 
 
-<h1 class="u-relative u-text-h2 lg:u-text-h1 xl:u-text-hero">Our Services</h1>
+<h1 class="u-relative u-text-h2 lg:u-text-h1 xl:u-text-hero">Contact Us</h1>
 
 
       
     </div>
   </div>
 </div>
-
-
-
-
 
 <div class="u-space-y-16">
-  <div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10 md:u-flex-row-reverse">
-  <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
-    <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="./img/nurse_holding_phone.jpg"
-         alt="Woman with mask on holding phone for older woman">
-  </div>
-  <div class="md:u-w-1/2 u-space-y-4">
     
   
 
@@ -101,80 +91,114 @@
   
 
 
-<h2 class="u-relative u-text-h2 u-mb-6 ">Our services include</h2>
+<h2 class="u-relative u-text-h2 u-mb-6 ">Get in touch</h2>
+
+    <div class="u-grid u-grid-cols-1 md:u-grid-cols-2 u-gap-4 lg:u-gap-8">
+      <div class="u-space-y-4">
+
+        <p>If you've got any questions about the services we provide or the clients we serve please contact us on through
+          email, phone or contact form, and we will do about best to get back to you as soon as possible.
+        </p>
+
+        <ul>
+          <li>
+            <a class="hover:u-underline" href="mailto:info@handstogetherhealthcare.co.uk" >info@handstogetherhealthcare.co.uk</a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div>
+        <form id="contact-form" class="u-flex u-flex-col u-space-y-3"
+          method="POST"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSeshb3MvnBudadnQCgWFPt9I-IJJbvHD5IixpDdpKL1XNayjQ/formResponse">
+
+          
+
+<label for="name">
+  Name
+
+  
+    <span class="u-text-red">*</span>
+  
+
+  
+    <input class="u-mt-1 u-block u-w-full u-rounded-md u-border-gray-400 u-shadow-sm focus:u-border-indigo-300 focus:u-ring focus:u-ring-indigo-200 focus:u-ring-opacity-50"
+           name="entry.2005620554"
+           type="text"
+           id="name"
+             required/>
+  
+</label>
 
 
-    <div>
-      
-  <div class="u-space-y-3">
-    <p>
-      We provide ongoing support that’s completely built around your needs and routines.
-      It’s one of the many reasons why we’re the nation’s favourite for home care. In this
-      we provide the following for our clients and patients:
-    </p>
-    <ul class="services-list md:u-flex-row md:u-gap-6 u-flex u-flex-col">
-      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
-        <span>Personal Care</span>
-        <span>Doing their Budget</span>
-        <span>Shopping</span>
-        <span>Organising Hospital Appointments</span>
-        <span>Supporting them on holidays</span>
-        <span>With Universal credit</span>
-      </li>
+          
 
-      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
-        <span>Bringing back their independence in the Community</span>
-        <span>One to one care</span>
-        <span>Community care</span>
-      </li>
-    </ul>
-  </div>
+<label for="email">
+  Email
 
+  
+    <span class="u-text-red">*</span>
+  
+
+  
+    <input class="u-mt-1 u-block u-w-full u-rounded-md u-border-gray-400 u-shadow-sm focus:u-border-indigo-300 focus:u-ring focus:u-ring-indigo-200 focus:u-ring-opacity-50"
+           name="entry.1045781291"
+           type="text"
+           id="email"
+             required/>
+  
+</label>
+
+
+          
+
+<label for="ph-number">
+  Phone number
+
+  
+
+  
+    <input class="u-mt-1 u-block u-w-full u-rounded-md u-border-gray-400 u-shadow-sm focus:u-border-indigo-300 focus:u-ring focus:u-ring-indigo-200 focus:u-ring-opacity-50"
+           name="entry.1065046570"
+           type="text"
+           id="ph-number"
+            />
+  
+</label>
+
+
+          
+
+<label for="message">
+  Message
+
+  
+    <span class="u-text-red">*</span>
+  
+
+  
+    <textarea class="u-mt-1 u-block u-w-full u-rounded-md u-border-gray-400 u-shadow-sm focus:u-border-indigo-300 focus:u-ring focus:u-ring-indigo-200 focus:u-ring-opacity-50"
+            name="entry.839337160"
+            id="message"
+             required>
+    </textarea>
+  
+</label>
+
+
+          <div>
+            <button formtarget="_blank" class="btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-
-    
-  </div>
 </div>
 
-  <div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10">
-  <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
-    <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="./img/bloodpressure.jpg"
-         alt="Woman with mask on holding phone for older woman">
-  </div>
-  <div class="md:u-w-1/2 u-space-y-4">
-    
-  
 
-
-
-  
-
-
-<h2 class="u-relative u-text-h2 u-mb-6 ">Our clients</h2>
-
-
-    <div>
-      
-  <div class="u-space-y-3">
-    <p>We aim to serve a number of clients with various needs such as:</p>
-    <ul class="services-list md:u-flex-row md:u-gap-6 u-flex u-flex-col">
-      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
-        <span>Metal health issues</span>
-        <span>Living supported</span>
-        <span>Dom care/domiciliary care</span>
-        <span>Learning disabilities support</span>
-        <span>Autism support</span>
-        <span>Reablement support</span>
-      </li>
-    </ul>
-  </div>
-
-    </div>
-
-    
-  </div>
-</div>
-</div>
+<script>
+  const form=document.getElementById("contact-form");form.addEventListener("submit",(function(t){setTimeout((()=>{form.reset()}),500)}));
+</script>
     </main>
     <footer class="u-bg-primary u-text-white u-py-6">
   <div class="md:u-flex-row u-container u-flex u-flex-col">
@@ -193,11 +217,11 @@
       </li>
       
         <li class="u-p-1 u-border-l">
-          <a class="hover:u-underline" href="/our-services/" >Our Services</a>
+          <a class="hover:u-underline" href=".//our-services" >Our Services</a>
         </li>
       
         <li class="u-p-1 u-border-l">
-          <a class="hover:u-underline" href="/contact-us/" >Contact Us</a>
+          <a class="hover:u-underline" href=".//contact-us" >Contact Us</a>
         </li>
       
     </ul>
