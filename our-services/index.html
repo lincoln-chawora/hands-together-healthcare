@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Our Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lincoln Chawora">
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+    <script defer src="/assets/alpine.js"></script>
+  </head>
+  <body>
+    
+<script>
+  document.addEventListener("alpine:init",(()=>{Alpine.data("navigation",(()=>({isOpen:!1,toggle(){this.isOpen=!this.isOpen}})))}));
+</script><header class="u-border-b">
+  <nav x-data="navigation"
+       class="md:u-flex-row md:u-flex-wrap md:u-items-center md:u-justify-between u-container u-flex u-flex-col u-py-3">
+    <div class="u-flex u-justify-between u-items-center">
+      <a href="/" class="u-flex u-items-center u-justify-center">
+        <img class="u-w-20" src="/img/logo.svg" alt="hands together logo">
+      </a>
+
+      <button @click="toggle"
+              :class="isOpen ? 'is-open' : ''"
+              class="hamburger-lines md:u-hidden u-flex u-flex-col u-w-12 u-h-8 u-justify-between">
+        <span class="line u-transition"></span>
+        <span class="line u-transition"></span>
+        <span class="line u-transition"></span>
+      </button>
+    </div>
+
+    
+    <ul :class="isOpen ? 'u-flex' : 'u-hidden'"
+        class="nav-items u-mt-3 md:u-mt-0 md:u-flex u-flex-col md:u-flex-row md:u-items-center">
+      
+        <li class="u-inline">
+          <a href="/our-services/" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+             u-border-b-2 u-border-primary">
+            Our Services
+          </a>
+        </li>
+      
+        <li class="u-inline">
+          <a href="/contact-us/" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+             u-text-primary hover:u-text-gray-900">
+            Contact Us
+          </a>
+        </li>
+      
+      
+    </ul>
+  </nav>
+</header>
+    <main class="u-container u-mb-10">
+      <div class="hero-image u-bg-primary u-bg-center u-bg-no-repeat u-bg-cover u-relative u-h-75vh u-breakout u-mb-10"
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/wheel_chair.jpg');">
+  <div class="u-container u-h-full">
+    <div class="hero-text u-flex u-flex-col u-h-full u-justify-center u-text-center u-text-white">
+      
+  
+
+
+
+  
+
+
+<h1 class="u-relative u-text-h2 lg:u-text-h1 xl:u-text-hero">Our Services</h1>
+
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="u-space-y-16">
+  <div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10 md:u-flex-row-reverse">
+  <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
+    <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="/img/nurse_holding_phone.jpg"
+         alt="Woman with mask on holding phone for older woman">
+  </div>
+  <div class="md:u-w-1/2 u-space-y-4">
+    
+  
+
+
+
+  
+
+
+<h2 class="u-relative u-text-h2 u-mb-6 ">Our services include</h2>
+
+
+    <div>
+      
+  <div class="u-space-y-3">
+    <p>
+      We provide ongoing support that’s completely built around your needs and routines.
+      It’s one of the many reasons why we’re the nation’s favourite for home care. In this
+      we provide the following for our clients and patients:
+    </p>
+    <ul class="services-list md:u-flex-row md:u-gap-6 u-flex u-flex-col">
+      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
+        <span>Personal Care</span>
+        <span>Doing their Budget</span>
+        <span>Shopping</span>
+        <span>Organising Hospital Appointments</span>
+        <span>Supporting them on holidays</span>
+        <span>With Universal credit</span>
+      </li>
+
+      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
+        <span>Bringing back their independence in the Community</span>
+        <span>One to one care</span>
+        <span>Community care</span>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+
+    
+  </div>
+</div>
+
+  <div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10">
+  <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
+    <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="/img/bloodpressure.jpg"
+         alt="Woman with mask on holding phone for older woman">
+  </div>
+  <div class="md:u-w-1/2 u-space-y-4">
+    
+  
+
+
+
+  
+
+
+<h2 class="u-relative u-text-h2 u-mb-6 ">Our clients</h2>
+
+
+    <div>
+      
+  <div class="u-space-y-3">
+    <p>We aim to serve a number of clients with various needs such as:</p>
+    <ul class="services-list md:u-flex-row md:u-gap-6 u-flex u-flex-col">
+      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
+        <span>Metal health issues</span>
+        <span>Living supported</span>
+        <span>Dom care/domiciliary care</span>
+        <span>Learning disabilities support</span>
+        <span>Autism support</span>
+        <span>Reablement support</span>
+      </li>
+    </ul>
+  </div>
+
+    </div>
+
+    
+  </div>
+</div>
+</div>
+    </main>
+    <script src="/assets/main.js"></script>
+    <footer class="u-bg-primary u-text-white u-py-6">
+  <div class="md:u-flex-row u-container u-flex u-flex-col">
+    <div class="u-flex u-flex-col md:u-w-1/2">
+      <p class="u-p-1 u-border-l">Francesca Ranga</p>
+      
+
+      <a class="u-p-1 u-border-l hover:u-underline" href="mailto:info@handstogetherhealthcare.co.uk" >info@handstogetherhealthcare.co.uk</a>
+
+      <a class="u-p-1 u-border-l hover:u-underline" href="https://github.com/lincoln-chawora" >Created by Lincoln Chawora</a>
+    </div>
+    
+    <ul class="u-flex u-flex-col md:u-w-1/2">
+      <li class="u-p-1 u-border-l">
+        <a class="hover:u-underline" href="/" >Home</a>
+      </li>
+      
+        <li class="u-p-1 u-border-l">
+          <a class="hover:u-underline" href="/our-services/" >Our Services</a>
+        </li>
+      
+        <li class="u-p-1 u-border-l">
+          <a class="hover:u-underline" href="/contact-us/" >Contact Us</a>
+        </li>
+      
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>
