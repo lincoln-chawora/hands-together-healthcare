@@ -16,6 +16,12 @@
         url: 'mailto:' ~ site.email,
         classes: 'u-p-1 u-border-l hover:u-underline'
       }) }}
+
+      {{ component('link', {
+        text: 'Created by Lincoln Chawora',
+        url: 'https://github.com/lincoln-chawora',
+        classes: 'u-p-1 u-border-l hover:u-underline'
+      }) }}
     </div>
     {% set navPages = collections.all | eleventyNavigation %}
     <ul class="u-flex u-flex-col md:u-w-1/2">
