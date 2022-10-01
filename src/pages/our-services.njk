@@ -14,5 +14,62 @@ eleventyNavigation:
   img_alt: "Woman pushing older woman in a wheel chair"
 }) }}
 
-<p>Your awesome content goes here.</p>
+{% set services %}
+  <div class="u-space-y-3">
+    <p>
+      We provide ongoing support that’s completely built around your needs and routines.
+      It’s one of the many reasons why we’re the nation’s favourite for home care. In this
+      we provide the following for our clients and patients:
+    </p>
+    <ul class="services-list md:u-flex-row md:u-gap-6 u-flex u-flex-col">
+      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
+        <span>Personal Care</span>
+        <span>Doing their Budget</span>
+        <span>Shopping</span>
+        <span>Organising Hospital Appointments</span>
+        <span>Supporting them on holidays</span>
+        <span>With Universal credit</span>
+      </li>
 
+      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
+        <span>Bringing back their independence in the Community</span>
+        <span>One to one care</span>
+        <span>Community care</span>
+      </li>
+    </ul>
+  </div>
+{% endset %}
+
+{% set clients %}
+  <div class="u-space-y-3">
+    <p class="u-text-red u-opac">We aim to serve a range of clients with: </p>
+    <ul class="services-list md:u-flex-row md:u-gap-6 u-flex u-flex-col">
+      <li class="u-flex u-flex-col u-flex-1 u-space-y-1">
+        <span>Metal health issues</span>
+        <span>Living supported</span>
+        <span>Dom care/domiciliary care</span>
+        <span>With Learning disabilities</span>
+        <span>With autism</span>
+        <span>Reablement support</span>
+      </li>
+    </ul>
+  </div>
+{% endset %}
+
+<div class="u-space-y-16">
+  {{ component('left-right', {
+    reverse: true,
+    heading: "Our services include",
+    text: services|safe,
+    img_src: "nurse_holding_phone.jpg",
+    img_alt: "Woman with mask on holding phone for older woman"
+  }) }}
+
+  {{ component('left-right', {
+    reverse: false,
+    heading: "Our clients",
+    text: clients|safe,
+    img_src: "bloodpressure.jpg",
+    img_alt: "Woman with mask on holding phone for older woman"
+  }) }}
+</div>

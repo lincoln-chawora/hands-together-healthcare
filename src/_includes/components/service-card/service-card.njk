@@ -1,12 +1,12 @@
 <div class="u-flex u-flex-col u-items-center u-text-center">
-    <img class="u-w-20" loading="lazy" src="/img/{{ include.icon }}" alt="icon of {{ include.icon | replace('.svg', '') }}">
+  <img class="u-w-20" loading="lazy" src="/img/{{ include.icon }}" alt="icon of {{ include.icon | replace('.svg', '') }}">
 
-    {{ component('heading', {
-        heading: include.heading,
-        heading_level: 3,
-        omit_base_class: true,
-        heading_classes: "u-text-h4 u--mt-2 u-leading-7"
-    }) }}
+  {{ component('heading', {
+    heading: include.heading,
+    heading_level: 3,
+    omit_base_class: true,
+    heading_classes: "u-text-h4 u--mt-2 u-leading-7"
+  }) }}
 
-    <p class="u-mt-3 u-flex u-flex-grow u-items-end">{{ include.text }}</p>
+  <p class="u-mt-3 u-flex u-flex-grow u-items-end">{{ include.text }}</p>
 </div>

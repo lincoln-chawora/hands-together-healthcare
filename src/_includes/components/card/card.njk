@@ -1,26 +1,28 @@
-<div class="card group u-border u-relative u-flex u-w-full u-h-full u-bg-white u-text-black u-overflow-hidden u-rounded u-justify-end u-select-none hover:u-shadow u-transition u-flex-col" data-card style="cursor: pointer;">
-    <div class="card__body u-flex u-flex-grow u-content-box u-z-1 u-p-3">
-        <div class="u-flex u-flex-col u-flex-grow u-space-y-4 u-w-0">
-            <div class="u-space-y-4">
-                <h3 class="card-heading u-text-large xl:u-text-h5 u-mb-0 u-font-bold">
-                    {{ component('link', {
-                        text: include.heading,
-                        url: include.url,
-                        classes: 'u-text-current-color group-hocus:u-underline'
-                    }) }}
-                </h3>
+<div class="card group u-border u-relative u-flex u-w-full u-h-full u-bg-white u-text-black u-overflow-hidden u-rounded u-justify-end u-select-none hover:u-shadow u-transition u-flex-col"
+     data-card style="cursor: pointer;">
+  <div class="card__body u-flex u-flex-grow u-content-box u-z-1 u-p-3">
+    <div class="u-flex u-flex-col u-flex-grow u-space-y-4 u-w-0">
+      <div class="u-space-y-4">
+        <h3 class="card-heading u-text-large xl:u-text-h5 u-mb-0 u-font-bold">
+          {{ component('link', {
+            text: include.heading,
+            url: include.url,
+            classes: 'u-text-current-color group-hocus:u-underline'
+          }) }}
+        </h3>
 
-                <div>
-                    {{ include.date }}
-                </div>
-            </div>
-            <div class="u-flex-grow">
-                <p class="p u-max-w-measure-lg u-leading-normal">{{ include.summary }}</p>
-            </div>
+        <div>
+          {{ include.date }}
         </div>
+      </div>
+      <div class="u-flex-grow">
+        <p class="p u-max-w-measure-lg u-leading-normal">{{ include.summary }}</p>
+      </div>
     </div>
-    <div class="card__image u-bg-grey-50 u--order-1">
-        <div class="u-shadow-inner u-z-1"></div>
-        <img class="u-w-full u-h-60 u-object-cover" loading="lazy" src="/img/{{ include.img_src }}" alt="{{ include.img_alt }}">
-    </div>
+  </div>
+  <div class="card__image u-bg-grey-50 u--order-1">
+    <div class="u-shadow-inner u-z-1"></div>
+    <img class="u-w-full u-h-60 u-object-cover" loading="lazy" src="/img/{{ include.img_src }}"
+         alt="{{ include.img_alt }}">
+  </div>
 </div>
