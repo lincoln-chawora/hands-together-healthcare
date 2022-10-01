@@ -1,5 +1,16 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin')
 
+// Deleting these colours to suppress warnings about renamed colours.
+delete colors['lightBlue'];
+delete colors['warmGray'];
+delete colors['trueGray'];
+delete colors['coolGray'];
+delete colors['blueGray'];
+
+const customColours = {
+  primary: '#005bd4',
+}
 module.exports = {
   content: [
     "./src/_includes/**/*.{html,md,11ty.js,liquid,njk,hbs,mustache,ejs,haml,pug}",
@@ -9,8 +20,18 @@ module.exports = {
   ],
   theme: {
     colors: {
-      ...colors,
-      primary: '#005bd4',
+      ...customColours,
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      emerald: colors.emerald,
+      indigo: colors.indigo,
+      yellow: colors.yellow,
+      'red': {
+        DEFAULT: colors.red[600]
+      },
     },
     screens: {
       sm: '576px',
@@ -22,8 +43,8 @@ module.exports = {
     fontSize: {
       xsmall: '11px',
       small: '13px',
-      mid: '15px',
       medium: '16px',
+      default: '18px',
       large: '20px',
       h5: '25px',
       h4: '31px',
@@ -45,6 +66,9 @@ module.exports = {
       padding: '15px',
     },
   },
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
   prefix: 'u-',
   important: true,
 }

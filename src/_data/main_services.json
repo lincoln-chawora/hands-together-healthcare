@@ -1,24 +1,24 @@
 {
   "items": [
     {
-      "name": "Around the clock care",
+      "name": "Integrity",
       "icon": "bandaid.svg",
-      "text": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "text": "We uphold the highest standards of integrity in all of our actions."
     },
     {
-      "name": "Companionship",
+      "name": "Availability",
       "icon": "wheelchair.svg",
-      "text": "Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus."
+      "text": "We support you in maintaining a safe level of trusted healthcare professionals 24/7."
     },
     {
-      "name": "Support",
+      "name": "Quality",
       "icon": "medicine-bottle.svg",
-      "text": "Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam."
+      "text": "We provide outstanding service that delivers premium value to our customers."
     },
     {
-      "name": "Company",
+      "name": "Caring",
       "icon": "nurse.svg",
-      "text": "Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+      "text": "We act with commitment and passion to provide a service based on empathy, kindness, respect and dignity"
     }
   ]
 }
