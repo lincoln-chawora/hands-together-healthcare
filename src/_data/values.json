@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Integrity",
+      "icon": "bandaid.svg",
+      "text": "We are honest and bring a strong support system based on an individuals requirements."
+    },
+    {
+      "name": "Availability",
+      "icon": "wheelchair.svg",
+      "text": "We are available when ever needed, always on the other end of the line."
+    },
+    {
+      "name": "Quality",
+      "icon": "medicine-bottle.svg",
+      "text": "We hold ourselves to the highest regard and aim to provide the highest possible quality care."
+    },
+    {
+      "name": "Caring",
+      "icon": "nurse.svg",
+      "text": "We act with commitment and passion to provide a service based on empathy, kindness, respect and dignity."
+    }
+  ]
+}
