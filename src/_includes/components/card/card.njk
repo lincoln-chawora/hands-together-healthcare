@@ -22,7 +22,10 @@
   </div>
   <div class="card__image u-bg-grey-50 u--order-1">
     <div class="u-shadow-inner u-z-1"></div>
-    <img class="u-w-full u-h-60 u-object-cover" loading="lazy" src="./img/{{ include.img_src }}"
-         alt="{{ include.img_alt }}">
+    {{ component('image', {
+      src: include.img_src,
+      alt: include.img_alt,
+      classes: 'u-w-full u-h-60 u-object-cover'
+    }) }}
   </div>
 </div>

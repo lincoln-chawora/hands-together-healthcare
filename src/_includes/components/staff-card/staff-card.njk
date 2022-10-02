@@ -1,7 +1,10 @@
 <div class="md:u-flex-row u-flex u-flex-col md:u-gap-6 u-items-center">
   <div class="u-flex u-items-center">
-    <img class="u-h-48 u-w-48 u-object-cover u-rounded-full" loading="lazy" src="./img/{{ include.img_src }}"
-         alt="{{ include.img_alt }}">
+    {{ component('image', {
+      src: include.img_src,
+      alt: include.img_alt,
+      classes: 'u-h-48 u-w-48 u-object-cover u-rounded-full'
+    }) }}
   </div>
   <div class="md:u-w-2/3">
     {{ component('heading', {
