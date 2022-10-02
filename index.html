@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lincoln Chawora">
     <meta name="description" content="">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="./assets/main.css" />
-    <script defer src="./assets/alpine.js"></script>
-    <script src="./assets/main.js"></script>
-    <script src="./assets/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css" />
+    <script defer src="/assets/alpine.js"></script>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/main.js"></script>
   </head>
   <body>
     
@@ -26,8 +26,8 @@
   <nav x-data="navigation"
        class="md:u-flex-row md:u-flex-wrap md:u-items-center md:u-justify-between u-container u-flex u-flex-col u-py-3">
     <div class="u-flex u-justify-between u-items-center">
-      <a href="./" class="u-flex u-items-center u-justify-center">
-        <img class="u-w-20" src="./img/logo.svg" alt="hands together logo">
+      <a href="/" class="u-flex u-items-center u-justify-center">
+        <img class="u-w-20" src="/img/logo.svg"  alt="hands together logo" loading="lazy">
       </a>
 
       <button @click="toggle"
@@ -44,14 +44,14 @@
         class="nav-items u-mt-3 md:u-mt-0 md:u-flex u-flex-col md:u-flex-row md:u-items-center">
       
         <li class="u-inline">
-          <a href="/our-services" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+          <a href="/our-services/" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
              u-text-primary hover:u-text-gray-900">
             Our Services
           </a>
         </li>
       
         <li class="u-inline">
-          <a href="/contact-us" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
+          <a href="/contact-us/" class="u-uppercase u-py-1 md:u-px-2 u-mr-4 u-inline-block
              u-text-primary hover:u-text-gray-900">
             Contact Us
           </a>
@@ -63,7 +63,7 @@
 </header>
     <main class="u-container u-mb-10">
       <div class="hero-image u-bg-primary u-bg-center u-bg-no-repeat u-bg-cover u-relative u-h-75vh u-breakout u-mb-10"
-     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/love_heart_hands.jpg');">
+     style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/love_heart_hands.jpg');">
   <div class="u-container u-h-full">
     <div class="hero-text u-flex u-flex-col u-h-full u-justify-center u-text-center u-text-white">
       
@@ -85,8 +85,7 @@
 <div class="u-space-y-16">
   <div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10">
   <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
-    <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="./img/hands_together.jpg"
-         alt="Hands holding each other">
+    <img class="u-w-full u-h-full u-object-cover" src="/img/hands_together.jpg"  alt="Hands holding each other" loading="lazy">
   </div>
   <div class="md:u-w-1/2 u-space-y-4">
     
@@ -113,8 +112,7 @@
 
   <div class="left-right-component u-flex u-flex-col md:u-flex-row u-gap-4 md:u-gap-10 md:u-flex-row-reverse">
   <div class="md:u-w-1/2 u-h-48 md:u-h-80 has-box-shadow">
-    <img class="u-w-full u-h-full u-object-cover" loading="lazy" src="./img/wheel_chair.jpg"
-         alt="Woman pushing older woman in a wheel chair">
+    <img class="u-w-full u-h-full u-object-cover" src="/img/wheel_chair.jpg"  alt="Woman pushing older woman in a wheel chair" loading="lazy">
   </div>
   <div class="md:u-w-1/2 u-space-y-4">
     
@@ -134,7 +132,7 @@
     </div>
 
     
-      <a class="btn-primary" href="./our-services" >See all</a>
+      <a class="btn-primary" href="/our-services" >See all</a>
     
   </div>
 </div>
@@ -154,7 +152,7 @@
     <div class="u-grid u-grid-cols-1 md:u-grid-cols-2 lg:u-grid-cols-4 u-gap-4">
       
           <div class="u-flex u-flex-col u-items-center u-text-center">
-  <img class="u-w-20" loading="lazy" src="./img/bandaid.svg" alt="icon of bandaid">
+  <img class="u-w-20" src="/img/bandaid.svg"  alt="icon of bandaid" loading="lazy">
 
   
   
@@ -171,7 +169,7 @@
 </div>
       
           <div class="u-flex u-flex-col u-items-center u-text-center">
-  <img class="u-w-20" loading="lazy" src="./img/wheelchair.svg" alt="icon of wheelchair">
+  <img class="u-w-20" src="/img/wheelchair.svg"  alt="icon of wheelchair" loading="lazy">
 
   
   
@@ -188,7 +186,7 @@
 </div>
       
           <div class="u-flex u-flex-col u-items-center u-text-center">
-  <img class="u-w-20" loading="lazy" src="./img/medicine-bottle.svg" alt="icon of medicine-bottle">
+  <img class="u-w-20" src="/img/medicine-bottle.svg"  alt="icon of medicine-bottle" loading="lazy">
 
   
   
@@ -205,7 +203,7 @@
 </div>
       
           <div class="u-flex u-flex-col u-items-center u-text-center">
-  <img class="u-w-20" loading="lazy" src="./img/nurse.svg" alt="icon of nurse">
+  <img class="u-w-20" src="/img/nurse.svg"  alt="icon of nurse" loading="lazy">
 
   
   
@@ -223,7 +221,7 @@
       
     </div>
 
-    <a class="btn-primary" href="./our-services" >See all services</a>
+    <a class="btn-primary" href="/our-services" >See all services</a>
   </div>
 </div>
 
@@ -241,15 +239,15 @@
     
     <ul class="u-flex u-flex-col md:u-w-1/2">
       <li class="u-p-1 u-border-l">
-        <a class="hover:u-underline" href="./" >Home</a>
+        <a class="hover:u-underline" href="/" >Home</a>
       </li>
       
         <li class="u-p-1 u-border-l">
-          <a class="hover:u-underline" href="/our-services" >Our Services</a>
+          <a class="hover:u-underline" href="/our-services/" >Our Services</a>
         </li>
       
         <li class="u-p-1 u-border-l">
-          <a class="hover:u-underline" href="/contact-us" >Contact Us</a>
+          <a class="hover:u-underline" href="/contact-us/" >Contact Us</a>
         </li>
       
     </ul>
