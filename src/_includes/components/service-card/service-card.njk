@@ -1,7 +1,7 @@
 <div class="u-flex u-flex-col u-items-center u-text-center">
   {{ component('image', {
     src: include.icon,
-    alt: 'icon of ' ~ include.icon|replace('.svg', '') ,
+    alt: 'icon of ' ~ include.icon|replace('.svg', ''),
     classes: 'u-w-20'
   }) }}
 
@@ -9,7 +9,7 @@
     heading: include.heading,
     heading_level: 3,
     omit_base_class: true,
-    heading_classes: "u-text-h4 u--mt-2 u-leading-7"
+    heading_classes: 'u-text-h4 u--mt-2 u-leading-7'
   }) }}
 
   <p class="u-mt-3 u-flex u-flex-grow u-items-end">{{ include.text }}</p>

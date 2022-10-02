@@ -2,19 +2,19 @@
 title: Hands Together Healthcare
 layout: layouts/base.njk
 ---
-{%- from "system/component.njk" import component -%}
+{%- from 'system/component.njk' import component -%}
 
 {{ component('hero-header', {
   heading: title,
-  img_src: "love_heart_hands.jpg",
-  img_alt: "3 women making love hearts with hands"
+  img_src: 'love_heart_hands.jpg',
+  img_alt: '3 women making love hearts with hands'
 }) }}
 
 <div class="u-space-y-16">
   {{ component('left-right', {
-    img_src: "hands_together.jpg",
-    img_alt: "Hands holding each other",
-    heading: "About us",
+    img_src: 'hands_together.jpg',
+    img_alt: 'Hands holding each other',
+    heading: 'About us',
     text: '<p>We aim to support health providers deliver the highest standards of Domcare nursing care when no one else can.
     Our goal is to be the trusted provider of exceptional nurses to the NHS and private health sector, often at extremely short notice.
     We believe that nothing should compromise nursing quality. With our experienced staff in responding to last-minute requirements,
@@ -26,15 +26,15 @@ layout: layouts/base.njk
     heading: "Our services",
     text: '<p>We care passionately about our clients and with our nurses we strive to make a difference to the lives of
     patients and clients.</p>'|safe,
-    img_src: "wheel_chair.jpg",
-    img_alt: "Woman pushing older woman in a wheel chair",
-    link_text: "See all",
-    link_url: "/our-services"
+    img_src: 'wheel_chair.jpg',
+    img_alt: 'Woman pushing older woman in a wheel chair',
+    link_text: 'See all',
+    link_url: '/our-services'
   }) }}
 
   <div class="u-flex u-flex-col u-items-center u-space-y-6">
     {{ component('heading', {
-      heading: "Our values",
+      heading: 'Our values',
       heading_level: 2
     }) }}
 
@@ -49,7 +49,7 @@ layout: layouts/base.njk
     </div>
 
     {{ component('link', {
-      text: "See all services",
+      text: 'See all services',
       url: '/our-services',
       classes: 'btn-primary'
     }) }}

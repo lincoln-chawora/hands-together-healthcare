@@ -6,12 +6,12 @@ eleventyNavigation:
   key: Contact Us
   order: 4
 ---
-{%- from "../_includes/system/component.njk" import component -%}
+{%- from '../_includes/system/component.njk' import component -%}
 
 {{ component('hero-header', {
   heading: title,
-  img_src: "contact.jpg",
-  img_alt: "Woman using macbook holding an iphone"
+  img_src: 'contact.jpg',
+  img_alt: 'Woman using macbook holding an iphone'
 }) }}
 
 <div class="u-space-y-16">
@@ -91,7 +91,7 @@ eleventyNavigation:
 </div>
 
 {% set form_js %}
-  {% include "src/scripts/form.js" %}
+  {% include 'src/scripts/form.js' %}
 {% endset %}
 <script>
   {{ form_js | jsmin | safe }}
