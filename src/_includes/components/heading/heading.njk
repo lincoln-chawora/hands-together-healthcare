@@ -7,7 +7,7 @@
 {% if include.omit_base_class %}
   {% set heading_classes %}{{ include.heading_classes }}{% endset %}
 {% else %}
-  {% set heading_classes %}u-text-h{{ heading_level }} u-mb-6 {{ include.heading_classes }}{% endset %}
+  {% set heading_classes %}u-text-h{{ heading_level }} {{ include.heading_classes }}{% endset %}
 {% endif %}
 
 <h{{ include.heading_level }} class="{{ heading_classes }}">{{ include.heading }}</h{{ include.heading_level }}>

@@ -14,7 +14,7 @@ eleventyNavigation:
   img_alt: 'Woman using macbook holding an iphone'
 }) }}
 
-<div class="u-space-y-16">
+<div class="u-space-y-8">
     {{ component('heading', {
       heading: 'Get in touch',
       heading_level: 2
@@ -46,7 +46,13 @@ eleventyNavigation:
         </ul>
       </div>
 
-      <div>
+      <div class="u-space-y-4">
+        <p>This form is powered by google forms, when you submit it a new tab will be opened.</p>
+        <div class="status-message u-bg-emerald-100 u-hidden u-items-center u-p-4 u-rounded-md u-text-emerald-900">
+          <span class="u-flex u-items-center u-justify-center u-bg-emerald-900 u-text-white u-w-8 u-h-8 u-rounded-full u-mr-3">&checkmark;</span>
+          <p>Submission complete! We will get back to you as soon as possible.</p>
+        </div>
+
         <form id="contact-form" class="u-flex u-flex-col u-space-y-3"
           method="POST"
           action="https://docs.google.com/forms/d/e/1FAIpQLSeshb3MvnBudadnQCgWFPt9I-IJJbvHD5IixpDdpKL1XNayjQ/formResponse">
