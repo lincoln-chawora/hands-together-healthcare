@@ -841,8 +841,8 @@ select {
 .u-bg-cover {
   background-size: cover !important;
 }
-.u-bg-left {
-  background-position: left !important;
+.u-bg-center {
+  background-position: center !important;
 }
 .u-bg-no-repeat {
   background-repeat: no-repeat !important;
