@@ -74,7 +74,7 @@
   
 
 
-<h1 class="u-relative u-text-h2 lg:u-text-h1 xl:u-text-hero">Contact Us</h1>
+<h1 class="u-text-h2 lg:u-text-h1 xl:u-text-hero">Contact Us</h1>
 
 
       
@@ -82,7 +82,7 @@
   </div>
 </div>
 
-<div class="u-space-y-16">
+<div class="u-space-y-8">
     
   
 
@@ -91,7 +91,7 @@
   
 
 
-<h2 class="u-relative u-text-h2 u-mb-6 ">Get in touch</h2>
+<h2 class="u-text-h2 ">Get in touch</h2>
 
     <div class="u-grid u-grid-cols-1 md:u-grid-cols-2 u-gap-4 lg:u-gap-8">
       <div class="u-space-y-4">
@@ -108,7 +108,13 @@
         </ul>
       </div>
 
-      <div>
+      <div class="u-space-y-4">
+        <p>This form is powered by google forms, when you submit it a new tab will be opened.</p>
+        <div class="status-message u-bg-emerald-100 u-hidden u-items-center u-p-4 u-rounded-md u-text-emerald-900">
+          <span class="u-flex u-items-center u-justify-center u-bg-emerald-900 u-text-white u-w-8 u-h-8 u-rounded-full u-mr-3">&checkmark;</span>
+          <p>Submission complete! We will get back to you as soon as possible.</p>
+        </div>
+
         <form id="contact-form" class="u-flex u-flex-col u-space-y-3"
           method="POST"
           action="https://docs.google.com/forms/d/e/1FAIpQLSeshb3MvnBudadnQCgWFPt9I-IJJbvHD5IixpDdpKL1XNayjQ/formResponse">
@@ -197,7 +203,7 @@
 
 
 <script>
-  const form=document.getElementById("contact-form");form.addEventListener("submit",(function(t){setTimeout((()=>{form.reset()}),500)}));
+  const form=document.getElementById("contact-form");form.addEventListener("submit",(function(e){setTimeout((()=>{form.reset(),document.getElementsByClassName("status-message")[0].classList.remove("u-hidden"),document.getElementsByClassName("status-message")[0].classList.add("u-flex")}),500)}));
 </script>
     </main>
     <footer class="u-bg-primary u-text-white u-py-6">
