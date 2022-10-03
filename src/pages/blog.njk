@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-{%- from "../_includes/system/component.njk" import component -%}
+{%- from './_includes/system/component.njk' import component -%}
 
 {% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}
+{% include 'components/postslist.njk' %}

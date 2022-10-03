@@ -27,6 +27,13 @@ label {
 	font-size: var(--theme-default-size);
 }
 
+/* Override tailwind container max-width on largest breakpoint. */
+@media (min-width: 1920px) {
+	.u-container {
+		max-width: 90rem;
+	}
+}
+
 html:not(.has-scrollbar-width-set) .u-breakout {
 	position: relative;
 	right: 50%;
@@ -42,6 +49,11 @@ html:not(.has-scrollbar-width-set) .u-breakout {
 	box-shadow: 0 2px 18px 0 rgb(0 0 0 / 30%);
 }
 
+h2 {
+	position: relative;
+	display: inline;
+}
+
 h2:not(.u-text-center)::after {
 	content: "";
 	position: absolute;
@@ -49,7 +61,7 @@ h2:not(.u-text-center)::after {
 	height: 4px;
 	background-color: var(--theme-primary);
 	bottom: -10px;
-	width: 25%;
+	width: 50%;
 }
 
 .hamburger-lines .line {
